@@ -7,11 +7,11 @@
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-<script src="./vendor/jquery/jquery.js"></script>
-<script src="./CSS/choose_club.js"></script>
-<link href=".\/vendor/bootstrap/CSS/bootstrap.min.CSS" type="text/css" rel="stylesheet">
+<script src="biju/vendor/jquery/jquery.js"></script>
+<script src="biju/CSS/choose_club.js"></script>
+<link href="biju/vendor/bootstrap/CSS/bootstrap.min.CSS" type="text/css" rel="stylesheet">
 <!------ Include the above in your HEAD tag ---------->
-<link href="./CSS/choose_club.css" rel="stylesheet" type='text/css'>
+<link href="biju/CSS/choose_club.css" rel="stylesheet" type='text/css'>
 
 </head>
 <body>
@@ -20,7 +20,7 @@
     
     	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
     		<div class="product-chooser-item selected">
-    			<img src="./CSS/index.jpg" class="img-rounded col-xs-4 col-sm-4 col-md-12 col-lg-12" alt="Mobile and Desktop">
+    			<img src="biju/CSS/index.jpg" class="img-rounded col-xs-4 col-sm-4 col-md-12 col-lg-12" alt="Mobile and Desktop">
                 <div class="col-xs-8 col-sm-8 col-md-12 col-lg-12">
     				<span class="title"><a href="P_clubpage.html"> Writers Coner</a></span>
     				<span class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</span>
@@ -32,7 +32,7 @@
     	
     	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
     		<div class="product-chooser-item">
-    			<img src="./CSS/dance.jpg" class="img-rounded col-xs-4 col-sm-4 col-md-12 col-lg-12" alt="Desktop">
+    			<img src="biju/CSS/dance.jpg" class="img-rounded col-xs-4 col-sm-4 col-md-12 col-lg-12" alt="Desktop">
                 <div class="col-xs-8 col-sm-8 col-md-12 col-lg-12">
     				<span class="title"><a href="#">Natya</a></span>
     				<span class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</span>
@@ -44,7 +44,7 @@
     	
     	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
     		<div class="product-chooser-item">
-    			<img src="./CSS/music.jpg" class="img-rounded col-xs-4 col-sm-4 col-md-12 col-lg-12" alt="Mobile">
+    			<img src="biju/CSS/music.jpg" class="img-rounded col-xs-4 col-sm-4 col-md-12 col-lg-12" alt="Mobile">
                 <div class="col-xs-8 col-sm-8 col-md-12 col-lg-12">
     				<span class="title"><a href = "#">Raga</a></span>
     				<span class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</span>
@@ -55,7 +55,7 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
     		<div class="product-chooser-item">
-    			<img src="./CSS/art.jpg" class="img-rounded col-xs-4 col-sm-4 col-md-12 col-lg-12" alt="Desktop">
+    			<img src="biju/CSS/art.jpg" class="img-rounded col-xs-4 col-sm-4 col-md-12 col-lg-12" alt="Desktop">
                 <div class="col-xs-8 col-sm-8 col-md-12 col-lg-12">
     				<span class="title"><a href="#">Kalakriti</a></span>
     				<span class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</span>
@@ -67,7 +67,7 @@
     	
     	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
     		<div class="product-chooser-item">
-    			<img src="./CSS/poem.jpg" class="img-rounded col-xs-4 col-sm-4 col-md-12 col-lg-12" alt="Mobile">
+    			<img src="biju/CSS/poem.jpg" class="img-rounded col-xs-4 col-sm-4 col-md-12 col-lg-12" alt="Mobile">
                 <div class="col-xs-8 col-sm-8 col-md-12 col-lg-12">
     				<span class="title"><a href="#">Kavi</a></span>
     				<span class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</span>
@@ -78,7 +78,7 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
     		<div class="product-chooser-item">
-    			<img src="./CSS/debate.jpg" class="img-rounded col-xs-4 col-sm-4 col-md-12 col-lg-12" alt="Mobile">
+    			<img src="biju/CSS/debate.jpg" class="img-rounded col-xs-4 col-sm-4 col-md-12 col-lg-12" alt="Mobile">
                 <div class="col-xs-8 col-sm-8 col-md-12 col-lg-12">
     				<span class="title"><a href="#">Debate</a></span>
     				<span class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</span>

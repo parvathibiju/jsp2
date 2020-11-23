@@ -18,16 +18,16 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="../rajesh/profile.html">Home</a>
+                <a class="navbar-brand" href="../rajesh/profile.jsp">Home</a>
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="../biju/P_create_event.html">Create Event</a>
+                        <a class="nav-link" href=/createEvent>Create Event</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../tr/requestPage.html">Give Request</a>
+                        <a class="nav-link" href="../tr/requestPage.jsp">Give Request</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../tr/pendingRequest.html">Pending Request</a>
+                        <a class="nav-link" href="../tr/pendingRequest.jsp">Pending Request</a>
                     </li>
 
                 </ul>
@@ -38,7 +38,7 @@
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a href="../nithesh/login.html">
+                        <a href="../nithesh/login.jsp">
                             <button class="btn btn-outline-danger my-2 my-sm-0">Logout</button></a>
 
                     </li>

@@ -1,4 +1,4 @@
-package createevents.connectamrita.model;
+package model;
 
 public class EventCreation {
 

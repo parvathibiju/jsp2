@@ -1,3 +1,9 @@
+
+<%@page import="dao.DashboardFetchDAO"%>
+<%@page import="servlets.DashboardFetchServlet"%> 
+<%@page import="model.EventCreation"%> 
+ 
+<%@page import="java.util.ArrayList"%> 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
@@ -6,14 +12,15 @@
         <title>
             dashboard
         </title>
-        <link  type="text/css" href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="./CSS/dashboard.css">
-        <link rel="stylesheet" type="text/css" href="./CSS/newsitem.css">
+        <link  type="text/css" href="biju/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="biju/CSS/dashboard.css">
+        <link rel="stylesheet" type="text/css" href="biju/CSS/newsitem.css">
 
     </head>
     
             
     <body>
+    
         <header>
             <div class="logo">Con<span>NEKT</span></div>
         </header>
@@ -27,8 +34,26 @@
                     <button class="btn" onclick="filterSelection('Poetry')"> Poetry</button>
                     <button class="btn" onclick="filterSelection('Dance')"> Dance</button>
                   </div>
-
-                <div class='filterDiv Literature'>
+                  
+                  
+				<%ArrayList<EventCreation> events = (ArrayList<EventCreation>)request.getAttribute("listEvent"); 
+			    for (EventCreation e:events){
+			    	System.out.println(e.getEvent_desc());%>
+			    	<div class='filterDiv Literature'  style={width:100%}>
+	                <div class="panel-wrapper">
+	                    <div class="panel-head">
+	                        News - <%=e.getEvent_name()%>
+	                    </div>
+	                    <div class="panel-body">
+	                        What to Expect >>> <%=e.getEvent_category()%>
+	                        <br>
+	                       Where to be >>> <%=e.getEvent_loc()%>
+	                       <span style="color:white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam fugiat culpa quia possimus molestiae id sapiente ad eveniet, aliquid, eum sint fuga eius, ratione suscipit ut minus voluptates dicta nesciunt.</span>
+	                    </div>
+	                </div>
+                	</div>
+			    	<%}%>
+                <!-- <div class='filterDiv Literature'>
                 <div class="panel-wrapper">
                     <div class="panel-head">
                         News - Literature
@@ -39,10 +64,10 @@
                 </div>
                 </div>
 
-                <div class='filterDiv Singing'>
+                <div class='filterDiv Literature'>
                 <div class="panel-wrapper" >
                     <div class="panel-head" >
-                        <a href="../sanjana/register/register_event.html">News - Singing</a>
+                        <a href="../sanjana/register/register_event.html">News - Literature</a>
                     </div>
                     <div class="panel-body">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam fugiat culpa quia possimus molestiae id sapiente ad eveniet, aliquid, eum sint fuga eius, ratione suscipit ut minus voluptates dicta nesciunt.
@@ -81,8 +106,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        <script  type ="text/javascript" src="./dash_highlight.js"></script>
+            </div> -->
+        <script  type ="text/javascript" src="biju/dash_highlight.js"></script>
+        
     </body>
 
 </html>

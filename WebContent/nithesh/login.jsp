@@ -26,7 +26,7 @@
                     <h3>Sign In</h3>
                 </div>
                 <div class="card-body">
-                    <form action="../rajesh/profile.html" onsubmit="return validate()" method="GET">
+                    <form action="../rajesh/profile.jsp" onsubmit="return validate()" method="GET">
                         <div class="input-group form-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -51,7 +51,7 @@
                 </div>
                 <div class="card-footer">
                     <div class="d-flex justify-content-center links">
-                        Don't have an account?<a href="./signup.html">Sign Up</a>
+                        Don't have an account?<a href="./signup.jsp">Sign Up</a>
                     </div>
                     <div class="d-flex justify-content-center">
                         <a href="#">Forgot your password?</a>

@@ -1,4 +1,4 @@
-package createevent.connectamrita.dao;
+package dao;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -7,25 +7,27 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import createevents.connectamrita.model.EventCreation;
-public class EventCreationDAO {
-	private String jdbcURL = "jdbc:mysql://localhost:3306/demo?useSSL=false";
-	private String jdbcUsername = "root";
-	private String jdbcPassword = "Parvathi";
-
-	private static final String INSERT_EVENT = "INSERT INTO events" + "  (cid, event_name, event_loc, event_category,event_regenddate,event_datetime,event_desc,event_link,max_count) VALUES "
-			+ " (?, ?, ?,?, ?, ?,?, ?, ?);";
+import model.EventCreation;
+public class DashboardFetchDAO {
+	private static String jdbcURL = "jdbc:mysql://localhost:3306/connectamrita";
+	private static String jdbcUsername = "root";
+	private static String jdbcPassword = "Parvathi";
 	private static final String SELECT_ALL_EVENTS = "SELECT * from events_";
 //	private static final String SELCET_EVENT_BY_CLUB = "select event_name,event_loc,event_category,event_desc,event_link from users where event_ =?";
 //	private static final String SELECT_MAX_COUNT = "select max_count from events_";
 	//update event-date,loc
 	//delete event
-	
-	public EventCreationDAO() {
+	private DashboardFetchDAO dashboardFetchDAO;
+
+	public void init() {
+		dashboardFetchDAO = new DashboardFetchDAO();
+
+	}
+	public DashboardFetchDAO() {
 		
 	}
 
-	protected Connection getConnection() {
+	protected static Connection getConnection() {
 		Connection connection = null;
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
@@ -40,32 +42,12 @@ public class EventCreationDAO {
 		return connection;
 	}
 	
-	public void insertEvent(EventCreation user) throws SQLException {
-		System.out.println(INSERT_EVENT);
-		// try-with-resource statement will auto close the connection.
-		try (Connection connection = getConnection();
-				PreparedStatement preparedStatement = connection.prepareStatement(INSERT_EVENT)) {
-			preparedStatement.setInt(1, user.getCid());
-			preparedStatement.setString(2, user.getEvent_loc());
-			preparedStatement.setString(3, user.getEvent_category());
-			preparedStatement.setString(4, user.getEvent_reg_enddate());
-			preparedStatement.setString(5, user.getEvent_date_time());
-			preparedStatement.setString(6, user.getEvent_desc());
-			preparedStatement.setString(7, user.getEvent_link());
-			preparedStatement.setString(8, user.getEvent_date_time());
-			preparedStatement.setInt(9, user.getMax_count());
-			System.out.println(preparedStatement);
-			preparedStatement.executeUpdate();
-		} 
-		catch (SQLException e) {
-			printSQLException(e);
-		}
-	}
+
 	
-	public  List<EventCreation> selectALLEvents() {
+	public static   List<EventCreation> selectALLEvents() {
 
 		// using try-with-resources to avoid closing resources (boiler plate code)
-		List<EventCreation> events = new ArrayList<>();
+		ArrayList<EventCreation> events = new ArrayList<>();
 		// Step 1: Establishing a Connection
 		try (Connection connection = getConnection();
 
@@ -95,7 +77,7 @@ public class EventCreationDAO {
 		return events;
 	}
 		
-		private void printSQLException (SQLException ex) {
+		private static void printSQLException (SQLException ex) {
 			for (Throwable e : ex) {
 				if (e instanceof SQLException) {
 					e.printStackTrace(System.err);
